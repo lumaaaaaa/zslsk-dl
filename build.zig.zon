@@ -1,0 +1,21 @@
+.{
+    .name = .zslsk_dl,
+    .version = "1.0.0",
+    .fingerprint = 0x8a2457e6f6a9a598,
+    .minimum_zig_version = "0.16.0-dev.2459+37d14a4f3",
+    .dependencies = .{
+        .zio = .{
+            .url = "git+https://github.com/lalinsky/zio?ref=zig-0.16#6c61ec7a439a9d3f79a6cb629d39fe08b63c2fd6",
+            .hash = "zio-0.6.0-xHbVVPmvGAD1Jb5fwCVxidrn1eljFxrtyycPq3P_zCBO",
+        },
+        .zslsk = .{
+            .url = "git+https://github.com/lumaaaaaa/zslsk#ebe3c0f3711c4ce5ac792f0e845eb03fbde3ad56",
+            .hash = "zslsk-0.0.0-McfEFLTwAQDf6Bvdg4wjgyY1nqNVSKgfSfKUq5BpjGHF",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
