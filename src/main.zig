@@ -26,8 +26,12 @@ pub fn main(init: std.process.Init) !void {
     defer allocator.free(config_path);
 
     // attempt to parse config file
-    var config = readConfig(io, arena_allocator, config_path) catch {
-        Config{}; // use default config
+    var config = readConfig(io, arena_allocator, config_path) catch |err| blk: {
+        std.log.debug("Could not read config: {}. Using defaults.", .{err});
+        break :blk Config{
+            .username = null,
+            .password = null,
+        }; // use default config
     };
 
     // create zio runtime
