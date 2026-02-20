@@ -86,7 +86,7 @@ fn app(rt: *zio.Runtime, client: *zslsk.Client, allocator: std.mem.Allocator, co
     defer allocator.free(album);
 
     print(rt, "[input] additional search terms: ", .{});
-    const additional = try readStdinLine(rt, allocator, true);
+    const additional = try readStdinLine(rt, allocator, false);
     defer allocator.free(additional);
 
     const query = try std.fmt.allocPrint(allocator, "{s} {s} {s} {s}", .{ artist, year, album, additional });

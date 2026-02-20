@@ -9,8 +9,8 @@
             .hash = "zio-0.6.0-xHbVVPmvGAD1Jb5fwCVxidrn1eljFxrtyycPq3P_zCBO",
         },
         .zslsk = .{
-            .url = "git+https://github.com/lumaaaaaa/zslsk#ebe3c0f3711c4ce5ac792f0e845eb03fbde3ad56",
-            .hash = "zslsk-0.0.0-McfEFLTwAQDf6Bvdg4wjgyY1nqNVSKgfSfKUq5BpjGHF",
+            .url = "git+https://github.com/lumaaaaaa/zslsk#7d443b5e654e79e1820a15340f3d330f17214de1",
+            .hash = "zslsk-0.0.0-McfEFM7zAQBK_j6xcXvsyjz_RsQmpfuf9MPSlQfbm8ak",
         },
     },
     .paths = .{
