@@ -225,7 +225,7 @@ fn processSearchResults(rt: *zio.Runtime, client: *zslsk.Client, allocator: std.
                         }
 
                         print(rt, "\r \u{2590}{s}\u{258C} {d:.1}% {d:.2} MB/s ", .{
-                            bar,
+                            bar[0..pos],
                             pct,
                             speed_mbps,
                         });
